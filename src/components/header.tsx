@@ -33,7 +33,7 @@ export const Header = () => {
     setAddressState(accounts[0]);
   });
   return (
-    <Box bg={"lightblue"}>
+    <Box>
       <Flex h={16} justifyContent="flex-end" pt={"10px"} pr={"10px"}>
         {!address ? (
           <Button onClick={handleSubmit}>Connect Wallet</Button>

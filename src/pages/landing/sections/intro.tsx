@@ -1,21 +1,11 @@
-import React from "react";
-import { useState } from "react";
-import {
-  Box,
-  Flex,
-  Heading,
-  VStack,
-  AspectRatio,
-  Button,
-} from "@chakra-ui/react";
-declare var window: any;
+import { Box, Flex, Heading, VStack, AspectRatio } from "@chakra-ui/react";
 
 export const Intro = () => {
   return (
-    <Box bg={"lightBlue"}>
+    <Box>
       <Flex justifyContent={"center"} alignItems={"center"} py={"100px"}>
         <VStack>
-          <Heading>Lorem Ipsum</Heading>
+          <Heading>Partial Common Ownership</Heading>
           <Heading pt={"40px"}>Lorem Ipsum a bunch of times</Heading>
           <AspectRatio
             minWidth={{ base: "200px", md: "300px", lg: "500px" }}
