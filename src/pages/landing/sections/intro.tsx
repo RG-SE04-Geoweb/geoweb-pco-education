@@ -2,13 +2,17 @@ import { Box, Flex, Heading, VStack, AspectRatio } from "@chakra-ui/react";
 
 export const Intro = () => {
   return (
-    <Box>
+    <Box bg={"blue.500"}>
       <Flex justifyContent={"center"} alignItems={"center"} py={"100px"}>
         <VStack>
-          <Heading>Partial Common Ownership</Heading>
-          <Heading pt={"40px"}>Lorem Ipsum a bunch of times</Heading>
+          <Heading color={"green.300"} as="h2" size={"3xl"}>
+            Partial Common Ownership
+          </Heading>
+          <Heading pt={"40px"} color={"whiteAlpha.800"}>
+            Lorem Ipsum a bunch of times
+          </Heading>
           <AspectRatio
-            minWidth={{ base: "200px", md: "300px", lg: "500px" }}
+            minWidth={{ base: "300px", md: "400px", lg: "600px" }}
             ratio={16 / 9}
           >
             <iframe
