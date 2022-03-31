@@ -8,6 +8,7 @@ import {
   MenuList,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 declare var window: any;
 
@@ -41,6 +42,7 @@ export const Header = () => {
             <MenuButton as={Button} color="blackAlpha.900">
               Connected: {address.substring(2, 6)} ...
               {address.substring(37, 41)}
+              <ChevronDownIcon boxSize={"25px"} pl="5px" />
             </MenuButton>
             <MenuList>
               <MenuItem onClick={handleDisconnect}>Disconnect</MenuItem>
