@@ -1,17 +1,10 @@
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-} from "@chakra-ui/react";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
+import { ChakraProvider, theme } from "@chakra-ui/react";
 import { Landing } from "./pages/landing/landing";
+import { InjectedProvider } from "./contexts/InjectedProviderContexts";
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Landing />
+    <InjectedProvider>
+      <Landing />
+    </InjectedProvider>
   </ChakraProvider>
 );
