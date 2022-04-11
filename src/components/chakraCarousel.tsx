@@ -220,7 +220,7 @@ const Slider = ({
           onClick={handleDecrementClick}
           onFocus={handleFocus}
           mr={`${gap / 3}px`}
-          color="blackAlpha.900"
+          color="whiteAlpha.900"
           variant="link"
           minW={0}
         >
@@ -245,7 +245,7 @@ const Slider = ({
           onClick={handleIncrementClick}
           onFocus={handleFocus}
           ml={`${gap / 3}px`}
-          color="blackAlpha.900"
+          color="whiteAlpha.900"
           variant="link"
           zIndex={2}
           minW={0}

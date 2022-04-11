@@ -1,15 +1,15 @@
 import { Box, Flex, Heading, VStack, AspectRatio } from "@chakra-ui/react";
+// import background from "../../..//constants/images/background2.png"
+
 
 export const Intro = () => {
   return (
-    <Box bg={"blue.500"}>
+    <Box
+    >
       <Flex justifyContent={"center"} alignItems={"center"} py={"100px"}>
         <VStack>
-          <Heading color={"green.300"} as="h2" size={"3xl"}>
-            Partial Common Ownership
-          </Heading>
-          <Heading pt={"40px"} color={"whiteAlpha.800"}>
-            Lorem Ipsum a bunch of times
+          <Heading color={"whiteAlpha.900"} as="h2" size={"3xl"} pb={"10px"}>
+            WTF is PCO
           </Heading>
           <AspectRatio
             minWidth={{ base: "300px", md: "400px", lg: "600px" }}
