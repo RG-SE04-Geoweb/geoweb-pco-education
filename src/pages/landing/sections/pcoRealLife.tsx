@@ -1,9 +1,11 @@
 import React from "react";
-import { Box, Image, Heading, HStack, Flex, Text, VStack, Button, Link, Icon } from "@chakra-ui/react";
+import { Box, Image, Heading, HStack, Flex, Text, VStack, Button, Link, } from "@chakra-ui/react";
 import { irlList } from "../../../constants/data/IRLData";
+import background from "../../../constants/images/background2.png"
+
 export const PcoRealLife = () => {
     return (
-        <Box py={"100px"} >
+        <Box py={"100px"} backgroundImage={background} >
             <Flex justifyContent={'center'} alignContent={'center'}>
                 <HStack spacing={3}>
                     {irlList.map((project) => {

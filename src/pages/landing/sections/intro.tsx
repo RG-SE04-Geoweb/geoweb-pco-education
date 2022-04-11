@@ -1,10 +1,10 @@
 import { Box, Flex, Heading, VStack, AspectRatio } from "@chakra-ui/react";
-// import background from "../../..//constants/images/background2.png"
+import background from "../../..//constants/images/background.png"
 
 
 export const Intro = () => {
   return (
-    <Box
+    <Box backgroundImage={background} height={"834px"}
     >
       <Flex justifyContent={"center"} alignItems={"center"} py={"100px"}>
         <VStack>
@@ -23,6 +23,6 @@ export const Intro = () => {
           </AspectRatio>
         </VStack>
       </Flex>
-    </Box>
+    </Box >
   );
 };
