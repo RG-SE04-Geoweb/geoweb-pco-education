@@ -1,12 +1,10 @@
 import React from "react";
 import { Box, Image, Heading, HStack, Text, Button, Link, SimpleGrid, Center } from "@chakra-ui/react";
 import { irlList } from "../../../constants/data/IRLData";
-import background from "../../../constants/images/background2.png"
-
 export const PcoRealLife = () => {
     return (
-        <Box py={"100px"} backgroundImage={background} >
-            <SimpleGrid minChildWidth='400px' spacing='40px' px={"40px"}>
+        <Box py={"100px"}  >
+            <SimpleGrid minChildWidth='200px' spacing='40px' px={"40px"}>
                 {irlList.map((project) => {
                     return (
                         <Center>

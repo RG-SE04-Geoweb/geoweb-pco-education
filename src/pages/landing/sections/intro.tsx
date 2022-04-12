@@ -4,11 +4,10 @@ import background from "../../..//constants/images/background.png"
 
 export const Intro = () => {
   return (
-    <Box backgroundImage={background} height={"834px"}
-    >
+    <Box backgroundImage={background} height={"834px"}>
       <Flex justifyContent={"center"} alignItems={"center"} py={"100px"}>
         <VStack>
-          <Heading color={"whiteAlpha.900"} as="h2" size={"3xl"} pb={"10px"}>
+          <Heading color={"whiteAlpha.900"} as="h1" size={"3xl"} pb={"10px"}>
             WTF is PCO
           </Heading>
           <AspectRatio

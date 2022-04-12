@@ -5,15 +5,18 @@ import { DeadWeightLoss } from "./sections/deadWeightLoss";
 import { SlideShow } from "./sections/slideShow";
 import { MarketInefficiency } from "./sections/marketInefficiency";
 import { PcoRealLife } from "./sections/pcoRealLife";
-
+import background from "../../constants/images/background2.png"
 export const Landing = () => {
   return (
     <Box >
       <Intro />
-      <DeadWeightLoss />
-      <SlideShow />
-      <MarketInefficiency />
-      <PcoRealLife />
+      <Box backgroundImage=
+        {background}>
+        <DeadWeightLoss />
+        <MarketInefficiency />
+        <SlideShow />
+        <PcoRealLife />
+      </Box>
     </Box>
   );
 };

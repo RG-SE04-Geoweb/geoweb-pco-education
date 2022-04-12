@@ -220,7 +220,7 @@ const Slider = ({
           onClick={handleDecrementClick}
           onFocus={handleFocus}
           mr={`${gap / 3}px`}
-          color="whiteAlpha.900"
+          color="gray.200"
           variant="link"
           minW={0}
         >
@@ -231,12 +231,12 @@ const Slider = ({
           value={percentage(activeItem, positions.length - constraint)}
           alignSelf="center"
           borderRadius="2px"
-          bg="gray.200"
+          bg="gray.700"
           flex={1}
           h="3px"
           sx={{
             "> div": {
-              backgroundColor: "blackAlpha.900",
+              backgroundColor: "gray.400",
             },
           }}
         />
@@ -245,7 +245,7 @@ const Slider = ({
           onClick={handleIncrementClick}
           onFocus={handleFocus}
           ml={`${gap / 3}px`}
-          color="whiteAlpha.900"
+          color="gray.200"
           variant="link"
           zIndex={2}
           minW={0}
