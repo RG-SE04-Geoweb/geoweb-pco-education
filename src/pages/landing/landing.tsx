@@ -8,6 +8,7 @@ import { PcoRealLife } from "./sections/pcoRealLife";
 import { PcoHelp } from "./sections/pcoHelp"
 import { SupportRxC } from "./sections/supportRxC";
 import background from "../../constants/images/background2.png"
+import { InputOutput } from "./sections/inputOutput"
 export const Landing = () => {
   return (
     <Box >
@@ -15,6 +16,7 @@ export const Landing = () => {
       <Box backgroundImage=
         {background}>
         <DeadWeightLoss />
+        <InputOutput />
         <MarketInefficiency />
         <PcoHelp />
         <SlideShow />
