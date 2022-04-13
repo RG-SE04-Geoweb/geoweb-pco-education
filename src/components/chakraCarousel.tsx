@@ -15,8 +15,8 @@ import {
   Button,
   Flex,
   Box,
+  Center,
 } from "@chakra-ui/react";
-
 import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 import { motion, useAnimation, useMotionValue } from "framer-motion";
 import useBoundingRect from "../hooks/useBoundingRect";
@@ -211,6 +211,7 @@ const Slider = ({
           right: 0,
           top: 0,
         }}
+        height={"400px"}
       >
         {children}
       </Box>

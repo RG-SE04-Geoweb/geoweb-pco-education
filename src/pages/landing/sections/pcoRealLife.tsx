@@ -3,12 +3,12 @@ import { Box, Image, Heading, HStack, Text, Button, Link, SimpleGrid, Center } f
 import { irlList } from "../../../constants/data/IRLData";
 export const PcoRealLife = () => {
     return (
-        <Box py={"100px"}  >
+        <Box py={"100px"} bgColor={"#24042c"}>
             <SimpleGrid minChildWidth='200px' spacing='40px' px={"40px"}>
                 {irlList.map((project) => {
                     return (
                         <Center>
-                            <Box maxW='sm' height={'100%'} borderWidth='1px' borderRadius='lg' overflow='hidden' p={15} bg={'whiteAlpha.300'} key={project.name} display={'flex'} flexDirection={'column'} >
+                            <Box maxW='sm' height={'100%'} borderWidth='1px' borderRadius='lg' p={15} bg={'whiteAlpha.300'} key={project.name} display={'flex'} flexDirection={'column'} >
                                 <HStack pb={"10px"}>
                                     <Image src={project.image} boxSize='50px' />
                                     <Heading as="h1" size={"lg"} > {project.name}

@@ -5,6 +5,8 @@ import { DeadWeightLoss } from "./sections/deadWeightLoss";
 import { SlideShow } from "./sections/slideShow";
 import { MarketInefficiency } from "./sections/marketInefficiency";
 import { PcoRealLife } from "./sections/pcoRealLife";
+import { PcoHelp } from "./sections/pcoHelp"
+import { SupportRxC } from "./sections/supportRxC";
 import background from "../../constants/images/background2.png"
 export const Landing = () => {
   return (
@@ -14,9 +16,11 @@ export const Landing = () => {
         {background}>
         <DeadWeightLoss />
         <MarketInefficiency />
+        <PcoHelp />
         <SlideShow />
-        <PcoRealLife />
       </Box>
+      <PcoRealLife />
+      <SupportRxC />
     </Box>
   );
 };
