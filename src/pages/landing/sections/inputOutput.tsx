@@ -34,8 +34,8 @@ export const InputOutput = () => {
     }, [sliderValue1, sliderValue2, sliderValue3])
 
     return (
-        <Box backgroundImage={background} height={"834px"}>
-            <Flex justifyContent={"center"} alignItems={"center"} py={"100px"}>
+        <Box bgColor={"blackAlpha.900"} height={"834px"}>
+            <Flex justifyContent={"center"} alignItems={"center"} py={"100px"} flexDirection={'column'}>
                 <Box p="4" width={"70%"}>
                     <VStack
                         spacing={10} >
