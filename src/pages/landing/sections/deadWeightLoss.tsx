@@ -1,24 +1,12 @@
 import { Box, Flex, Image, Heading, VStack } from "@chakra-ui/react";
 import harbergerGraph from "../../../constants/images/harbergerGraph.png";
 import harbergerGraph2 from "../../../constants/images/harbergerGraph2.png";
-
+import background from "../../../constants/images/background2.png";
 export const DeadWeightLoss = () => {
   return (
-    <Box  >
+    <Box backgroundImage={background}>
       <Flex justifyContent={"center"} alignItems={"center"} py={"100px"} px={"30px"}>
         <VStack>
-
-          <Heading as="h1" size={"2xl"} textAlign={"center"}>
-            DEAD WEIGHT LOSS (HARBERGER'S TRIANGLE)
-          </Heading>
-          <Heading as="h2" fontSize={"24px"} textAlign={"center"} pb={"10px"}>
-            The first thing we need to explain to understand Partial Common Ownership is to explain Dead Weight Loss or Harberger"s Triangle
-          </Heading>
-          <Box pb={"20px"}>
-
-
-            <Image src={harbergerGraph} bgColor={"whiteAlpha.900"} height={{ sm: "255px", md: "340px", lg: "425px" }} width={{ sm: "600px", md: "800px", lg: "1000px" }} />
-          </Box>
           <Box py={"20px"} height={"100%"} borderWidth="1px" borderRadius="lg" bg={"#24042c"} width={"70%"}>
             <Heading as="h3" fontSize={"24px"} textAlign={"center"} px={"5px"}>
               In a free market, balance is achieved by finding the perfect point between price and quantity being produced.
@@ -28,7 +16,7 @@ export const DeadWeightLoss = () => {
               Producer surplus represents how much more a company can make above its minimum profitable price.
             </Heading>
           </Box>
-          <Box pt={"20px"}>
+          <Box py={"20px"} >
             <Image src={harbergerGraph2} bgColor={"whiteAlpha.900"} height={{ sm: "343px", md: "458px", lg: "572px" }} width={{ sm: "600px", md: "800px", lg: "1000px" }} />
           </Box>
           <Box py={"20px"} height={"100%"} borderWidth="1px" borderRadius="lg" bg={"#24042c"} width={"70%"}>
