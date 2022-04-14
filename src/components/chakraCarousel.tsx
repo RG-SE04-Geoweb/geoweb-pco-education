@@ -21,7 +21,7 @@ import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 import { motion, useAnimation, useMotionValue } from "framer-motion";
 import useBoundingRect from "../hooks/useBoundingRect";
 import percentage from "../utils/percentage";
-
+import background from "../constants/images/slideBackground.png"
 const MotionFlex = motion(Flex);
 
 const transitionProps = {
@@ -184,37 +184,41 @@ const Slider = ({
 
   return (
     <>
-      <Box
-        ref={ref}
-        w={{ base: "100%", md: `calc(100% + ${gap}px)` }}
-        ml={{ base: 0, md: `-${gap / 2}px` }}
-        px={`${gap / 2}px`}
-        position="relative"
-        overflow="hidden"
-        _before={{
-          bgGradient: "linear(to-r, base.d400, transparent)",
-          position: "absolute",
-          w: `${gap / 2}px`,
-          content: "''",
-          zIndex: 1,
-          h: "100%",
-          left: 0,
-          top: 0,
-        }}
-        _after={{
-          bgGradient: "linear(to-l, base.d400, transparent)",
-          position: "absolute",
-          w: `${gap / 2}px`,
-          content: "''",
-          zIndex: 1,
-          h: "100%",
-          right: 0,
-          top: 0,
-        }}
-        height={"400px"}
-      >
-        {children}
-      </Box>
+      <Center>
+
+        <Box
+          ref={ref}
+          w={"1920px"}
+          ml={{ base: 0, md: `-${gap / 2}px` }}
+          px={`${gap / 2}px`}
+          position="relative"
+          overflow="hidden"
+          _before={{
+            bgGradient: "linear(to-r, base.d400, transparent)",
+            position: "absolute",
+            w: `${gap / 2}px`,
+            content: "''",
+            zIndex: 1,
+            h: "100%",
+            left: 0,
+            top: 0,
+          }}
+          _after={{
+            bgGradient: "linear(to-l, base.d400, transparent)",
+            position: "absolute",
+            w: `${gap / 2}px`,
+            content: "''",
+            zIndex: 1,
+            h: "100%",
+            right: 0,
+            top: 0,
+          }}
+          height={"400px"}
+          backgroundImage={background}
+        >
+          {children}
+        </Box>
+      </Center>
 
       <Flex w={`${itemWidth}px`} mt={`${gap / 2}px`} mx="auto">
         <Button
