@@ -185,13 +185,12 @@ const Slider = ({
   return (
     <>
       <Center>
-
         <Box
           ref={ref}
-          w={"1920px"}
           ml={{ base: 0, md: `-${gap / 2}px` }}
           px={`${gap / 2}px`}
           position="relative"
+          h={"auto"}
           overflow="hidden"
           _before={{
             bgGradient: "linear(to-r, base.d400, transparent)",
@@ -213,9 +212,10 @@ const Slider = ({
             right: 0,
             top: 0,
           }}
-          height={"400px"}
-          backgroundImage={background}
+          bgImage={background} bgPosition={"center"} bgRepeat={"no-repeat"} bgSize={"100% auto"}
+          height={"500px"}
         >
+
           {children}
         </Box>
       </Center>
@@ -439,6 +439,7 @@ const Item = ({
       py="4px"
       justifyContent={"center"}
       alignItems={"center"}
+      marginTop={"60px"}
     >
       {children}
     </Flex>
