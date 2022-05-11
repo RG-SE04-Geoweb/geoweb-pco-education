@@ -4,7 +4,7 @@ import { irlList } from "../../../constants/data/IRLData";
 export const PcoRealLife = () => {
     return (
         <Box py={"100px"} bgColor={"#24042c"}>
-            <SimpleGrid minChildWidth='200px' spacing='40px' px={"40px"}>
+            <SimpleGrid minChildWidth='300px' spacing='40px' px={"40px"}>
                 {irlList.map((project) => {
                     return (
                         <Center>

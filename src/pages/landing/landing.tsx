@@ -26,7 +26,7 @@ export const Landing = () => {
         <InputOutput />
         <MarketInefficiency />
         <PcoHelp />
-        <SlideShow />
+        {/* <SlideShow /> */}
       </Box>
       <PcoRealLife />
       <SupportRxC />
