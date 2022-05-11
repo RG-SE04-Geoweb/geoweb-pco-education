@@ -1,10 +1,9 @@
 import { Box, Flex, Image, Heading, VStack } from "@chakra-ui/react";
-import harbergerGraph from "../../../constants/images/harbergerGraph.png";
 import harbergerGraph2 from "../../../constants/images/harbergerGraph2.png";
-import background from "../../../constants/images/background2.png";
+
 export const DeadWeightLoss = () => {
   return (
-    <Box backgroundImage={background}>
+    <Box >
       <Flex justifyContent={"center"} alignItems={"center"} py={"100px"} px={"30px"}>
         <VStack>
           <Box py={"20px"} height={"100%"} borderWidth="1px" borderRadius="lg" bg={"#24042c"} width={"70%"}>
