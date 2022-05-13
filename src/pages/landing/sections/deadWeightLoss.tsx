@@ -1,11 +1,19 @@
 import { Box, Flex, Image, Heading, VStack } from "@chakra-ui/react";
 import harbergerGraph2 from "../../../constants/images/harbergerGraph2.png";
+import harbergerGraph from "../../../constants/images/harbergerGraph.png";
+import background from "../../../constants/images/background2.png"
 
 export const DeadWeightLoss = () => {
   return (
-    <Box >
+    <Box backgroundImage={background}>
       <Flex justifyContent={"center"} alignItems={"center"} py={"100px"} px={"30px"}>
         <VStack>
+          <Heading as="h1" size={"2xl"} textAlign={"center"} fontFamily={"slackey"} color={"purple.200"} textShadow='5px 5px #000000' >
+            HARBERGER'S <Box as={"span"} color={"whiteAlpha.900"} >TRIANGLE</Box>
+          </Heading>
+          <Box py={"20px"}>
+            <Image src={harbergerGraph} bgColor={"whiteAlpha.900"} height={{ sm: "255px", md: "340px", lg: "425px" }} width={{ sm: "600px", md: "800px", lg: "1000px" }} />
+          </Box>
           <Box py={"20px"} height={"100%"} borderWidth="1px" borderRadius="lg" bg={"#24042c"} width={"70%"}>
             <Heading as="h3" fontSize={"24px"} textAlign={"center"} px={"5px"}>
               In a free market, balance is achieved by finding the perfect point between price and quantity being produced.

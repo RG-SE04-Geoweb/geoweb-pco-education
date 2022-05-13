@@ -1,11 +1,12 @@
 import { Box, Flex, VStack, Heading } from "@chakra-ui/react";
+
 export const PcoHelp = () => {
     return (
         <Box >
             <Flex justifyContent={"center"} alignItems={"center"} py={"100px"}>
                 <VStack>
-                    <Heading as={"h1"} size={"2xl"} textAlign={"center"} pb={"20px"}>
-                        HOW DOES PARTIAL COMMON OWNERSHIP HELP?
+                    <Heading as={"h1"} size={"2xl"} textAlign={"center"} pb={"20px"} fontFamily={"slackey"} textShadow='5px 5px #000000'>
+                        HOW DOES <Box as={"span"} color={"purple.200"}> PARTIAL COMMON OWNERSHIP</Box>  HELP?
                     </Heading>
                     <Box py={"20px"} height={"100%"} borderWidth="1px" borderRadius="lg" bg={"#24042c"} width={"70%"}>
                         <Heading as="h3" fontSize={"24px"} textAlign={"center"} px={"5px"}>
