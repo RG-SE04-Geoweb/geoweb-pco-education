@@ -6,10 +6,11 @@ export const MarketInefficiency = () => {
     <Box >
       <Flex justifyContent={"center"} alignItems={"center"} py={"100px"}>
         <VStack>
-          <Heading as={"h1"} size={"2xl"} textAlign={"center"}>
+
+          <Heading as={"h1"} size={"2xl"} textAlign={"center"} fontFamily={"slackey"} color={"purple.200"} textShadow='5px 5px #000000'>
             WTF CAUSES MARKET INEFFECIENCY
           </Heading>
-          <Heading as={"h2"} size={"lg"} textAlign={"center"}>
+          <Heading as={"h2"} size={"lg"} textAlign={"center"} fontFamily={"slackey"} textShadow='5px 5px #000000'>
             It is really anything that places strain on free markets, including the following:
           </Heading>
 
